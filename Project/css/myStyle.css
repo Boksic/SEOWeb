@@ -1,0 +1,11 @@
+.imgFlower{
+    max-height: 200px;
+}
+
+.panelFlower{
+    max-height: 400px;
+    min-height: 400px;
+}
+h1{
+    font-size: 500px;
+}
