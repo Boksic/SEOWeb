@@ -1,5 +1,7 @@
 <html>
     <header>
+    	<title>Page d'acceuil FleurDelivery</title>
+        <meta name="description" content="Site de vente de fleurs. Livraison à domicile sous 24h à Paris et 48h en Ile-de-France."/>
 
         <link rel="stylesheet" href="css/myStyle.css">
 
@@ -10,102 +12,104 @@
         <!-- Latest compiled and minified JavaScript -->
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
         
-        <style>
-	      #map {
-	        height: 300px;
-	        width: 100%;
-	       }
-	    </style>
     </header>
     <body>
-        <title>Page d'acceuil FleurDelivery</title>
-        <meta name="description" content="Site de vente de fleurs. Livraison à domicile sous 24h à Paris et 48h en Ile-de-France."/>
-        <img src="http://www.villapaiva-fleuriste.com/fleuriste-montpellier/wp-content/uploads/2013/10/decoration-magasin-fleuriste.jpg" style="width:100%; height:50%;">
-        <nav class="navbar navbar-default">
-        	<div class="container-fluid">
-        		<!-- Brand and toggle get grouped for better mobile display -->
-				<div class="navbar-header">
-					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-						<span class="sr-only">Toggle navigation</span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-						<span class="icon-bar"></span>
-					</button>
-					<a class="navbar-brand" href="index.html">FleurDelivery</a>
-				</div>
-				
-				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-					<ul class="nav navbar-nav">
-						<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
-						<li><a href="views/bouquet.html">Bouquet</a></li>
-						<li><a href="views/fleur.html">Fleur</a></li>
-						<li><a href="views/livraison.html">Livraison</a></li>
-					</ul>
-				</div><!-- /.container-fluid -->
-        	</div>
-        </nav>
-        <div class="container">
-        	<h1>Presentation</h1>
-			<h3>Qui sommes-nous ?</h3>
-			<br/>
-			<h6>Nous sommes une entreprise récemment ouverte en plein centre de Paris specialisé dans la livraison de fleurs à domicile. Pour vous fournir des fleurs en toute circonstance dans vos moments de fêtes comme St-Valentin, les mariages, les communions, anniversaires, naissances ou dans des circonstances plus triste comme les enterrements, les hospitalisations de proches mais aussi pour remercier les personnes qui sont chère a vos yeux et les émerveiller avec nos beau montage floraux ou nos différents bouquets fait sur mesure, n'oubliez pas nos superbe plantes faite spécialement pour votre maison.</h6>
-			<br/><br/>
-		</div>
-		<div class="jumbotron">
-			<div class="container">
-				<div class="footer pl">
-					<div class="row">
-						<div class="col-xs-6">
-							<h3>Nous Contactez ?</h3>
-							<p style="bold">Telephone : +33103060306</p>
-							<p style="bold">Fax : +33103060307</p>
-							<p style="bold">Email : <a href="mailto:">fleurdelivery@livraison.com</a></p>
-							<p style="bold">Adresse : 139 rue des Pyrénées, 75020 Paris</p>
-						</div>
-						<div class="col-xs-6">
-							<div id="map"></div>
-						    <script>
-						
-						      function initMap() {
-						        var map = new google.maps.Map(document.getElementById('map'), {
-						          center: {lat: -34.397, lng: 150.644},
-						          zoom: 15
-						        });
-						        var infoWindow = new google.maps.InfoWindow({map: map});
-						
-						        // Try HTML5 geolocation.
-						        if (navigator.geolocation) {
-						          navigator.geolocation.getCurrentPosition(function(position) {
-						            var pos = {
-						              lat: position.coords.latitude,
-						              lng: position.coords.longitude
-						            };
-						
-						            infoWindow.setPosition(pos);
-						            infoWindow.setContent('Vous êtes ici !!!');
-						            map.setCenter(pos);
-						          }, function() {
-						            handleLocationError(true, infoWindow, map.getCenter());
-						          });
-						        } else {
-						          // Browser doesn't support Geolocation
-						          handleLocationError(false, infoWindow, map.getCenter());
-						        }
-						      }
-						
-						      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
-						        infoWindow.setPosition(pos);
-						        infoWindow.setContent(browserHasGeolocation ?
-						                              'Error: The Geolocation service failed.' :
-						                              'Error: Your browser doesn\'t support geolocation.');
-						      }
-						    </script>
-						    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh9HJBMKpnqYREu_xLshU9Oj9HW0pHQhc&callback=initMap">
-							</script>
+        <span itemscope itemtype="http://schema.org/LocalBusiness"><img itemprop="image" src="http://www.villapaiva-fleuriste.com/fleuriste-montpellier/wp-content/uploads/2013/10/decoration-magasin-fleuriste.jpg" style="width:100%; height:50%;"/>
+	        <nav class="navbar navbar-default">
+	        	<div class="container-fluid">
+	        		<!-- Brand and toggle get grouped for better mobile display -->
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="index.html"><span itemprop="name">FleurDelivery</span></a>
+					</div>
+					
+					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+						<ul class="nav navbar-nav">
+							<li class="active"><a href="index.html">Home<span class="sr-only">(current)</span></a></li>
+							<li><a href="views/bouquet.html">Bouquet</a></li>
+							<li><a href="views/fleur.html">Fleur</a></li>
+							<li><a href="views/livraison.html">Livraison</a></li>
+						</ul>
+					</div><!-- /.container-fluid -->
+	        	</div>
+	        </nav>
+	        <div class="container">
+	        	<h1>Presentation</h1>
+	        	<br/>
+				<h3>Qui sommes-nous ?</h3>
+				<br/>
+				<h4>Nous sommes une entreprise récemment ouverte en plein centre de Paris specialisé dans la livraison de fleurs à domicile. Pour vous fournir des fleurs en toute circonstance dans vos moments de fêtes comme St-Valentin, les mariages, les communions, anniversaires, naissances ou dans des circonstances plus triste comme les enterrements, les hospitalisations de proches mais aussi pour remercier les personnes qui sont chère a vos yeux et les émerveiller avec nos beau montage floraux ou nos différents bouquets fait sur mesure, n'oubliez pas nos superbe plantes faite spécialement pour votre maison.</h4>
+				<br/><br/>
+			</div>
+			<div class="jumbotron">
+				<div class="container">
+					<div class="footer pl">
+						<div class="row">
+							<div class="col-xs-6">
+								<h3>Nous Contactez ?</h3>
+								<p style="bold">Telephone : 
+									<span itemprop="telephone">+33103060306</span></p>
+								<p style="bold">Fax : 
+									<span itemprop="telephone">+33103060307</span></p>
+								<p style="bold">Email : <a href="mailto:">
+									<span itemprop="email">fleurdelivery@livraison.com</span></a></p>
+								<p itemprop="address" itemscope itemtype="http://schema.org/PostalAddress" style="bold">Adresse : 
+									<span itemprop="streetAddress">139 rue des Pyrénées</span>, 
+									<span itemprop="postalCode">75020</span> 
+									<span itemprop="addressLocality">Paris</span></p>
+								<p style="bold">Horaire : <span itemprop="name">Lundi au Vendredi</span>de 9h00 à 19h00</p>
+								<a href="https://www.facebook.com/Fleurdelivery-1319751928093064/"><img src="https://cdn.evbuc.com/eventlogos/126271801/likeusbutton.jpg" style="max-width:200px"/></a>
+							</div>
+							<div class="col-xs-6">
+								<div id="map"></div>
+							    <script>
+							
+							      function initMap() {
+							        var map = new google.maps.Map(document.getElementById('map'), {
+							          center: {lat: -34.397, lng: 150.644},
+							          zoom: 15
+							        });
+							        var infoWindow = new google.maps.InfoWindow({map: map});
+							
+							        // Try HTML5 geolocation.
+							        if (navigator.geolocation) {
+							          navigator.geolocation.getCurrentPosition(function(position) {
+							            var pos = {
+							              lat: position.coords.latitude,
+							              lng: position.coords.longitude
+							            };
+							
+							            infoWindow.setPosition(pos);
+							            infoWindow.setContent('Vous êtes ici !!!');
+							            map.setCenter(pos);
+							          }, function() {
+							            handleLocationError(true, infoWindow, map.getCenter());
+							          });
+							        } else {
+							          // Browser doesn't support Geolocation
+							          handleLocationError(false, infoWindow, map.getCenter());
+							        }
+							      }
+							
+							      function handleLocationError(browserHasGeolocation, infoWindow, pos) {
+							        infoWindow.setPosition(pos);
+							        infoWindow.setContent(browserHasGeolocation ?
+							                              'Error: The Geolocation service failed.' :
+							                              'Error: Your browser doesn\'t support geolocation.');
+							      }
+							    </script>
+							    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDh9HJBMKpnqYREu_xLshU9Oj9HW0pHQhc&callback=initMap">
+								</script>
+							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
+		</span>
     </body>
 </html>
