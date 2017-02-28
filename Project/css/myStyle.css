@@ -9,3 +9,8 @@
 h1{
     font-size: 500px;
 }
+
+#map {
+	height: 300px;
+	width: 100%;
+}
